@@ -51,8 +51,8 @@
                         <td><?= $key['nombre_pais'] ?></td>
                         <td><img src="<?= $key['imagen'] ?>" alt="" width="100px"></td>
                         <td>
-                            <a href="../procesos/eliminar.php?id=<?=$key['idPais'] ?>" class="fs-3 ms-5 text-danger"><i class="fa-solid fa-eraser"></i></a>
-                            <a href="../view/editar_pais.php?id=<?= $key['idPais'] ?>" class="fs-3 ms-3 text-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="../procesos/eliminar.php?id=<?=$key['idPais'] ?>" class="fs-3 text-danger"><i class="fa-solid fa-trash-can-xmark"></i></a>
+                            <a href="../view/editar_pais.php?id=<?= $key['idPais'] ?>" class="fs-3 ms-5 text-warning"><i class="fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
                     <?php
