@@ -11,7 +11,10 @@
     $c = new metodos();
 
     if ($c->buscarRepetidos($nombre_pais) == 1) {
-        echo "Tas mal, repetido";
+        echo'<script type="text/javascript">
+            alert("Repetido");
+            window.location.href="../view/nuevo_pais.php";
+            </script>';
     }else if ($c->insertarDatos($datos)) {
         header("location:../index.php");
     }
