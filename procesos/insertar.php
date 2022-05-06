@@ -12,7 +12,7 @@
 
     if ($c->buscarRepetidos($nombre_pais) == 1) {
         echo'<script type="text/javascript">
-            alert("Repetido");
+            alert("Pais Repetido, por favor verifica");
             window.location.href="../view/nuevo_pais.php";
             </script>';
     }else if ($c->insertarDatos($datos)) {

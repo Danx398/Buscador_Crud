@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </nav>
-            <form action="../procesos/insertar.php" method="POST" class="form-control mt-3">
+            <form action="../procesos/insertar.php" method="POST" class="form-control mt-3" autocomplete="off">
                 <div class="card mt-4">
                     <h1 class="text-center">Insert Country</h1>
                     <div class="card-body">
