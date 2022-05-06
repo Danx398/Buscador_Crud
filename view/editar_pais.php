@@ -38,7 +38,7 @@
             </nav>
             <form action="../procesos/editar.php" method="POST" class="form-control mt-3" autocomplete="off">
                 <div class="card mt-4">
-                    <h1 class="text-center">Insert Country</h1>
+                    <h1 class="text-center">Edit Country</h1>
                     <div class="card-body">
                         <input type="text" hidden name="id" value="<?= $id ?>">
                         <label for="">Current continent</label>

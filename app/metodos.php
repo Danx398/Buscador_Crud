@@ -43,5 +43,16 @@
                                       where id_pais='$datos[0]' ";
             return $result=mysqli_query($conexion,$sql);
         }
+        public function buscarRepetidos($pais){
+            $c = new Conexion();
+            $conexion = $c->conectar();
+            $sql = "SELECT * from t_pais where nombre_pais = '$pais'";
+            $result=mysqli_query($conexion,$sql);
+            if (mysqli_num_rows($result) > 0) {
+                return 1;
+            }else{
+                return 0;
+            }
+        }
     }
 ?>

@@ -9,7 +9,10 @@
     $datos = array($id_continente,$nombre_pais,$url);
      
     $c = new metodos();
-    if ($c->insertarDatos($datos)) {
+
+    if ($c->buscarRepetidos($nombre_pais) == 1) {
+        echo "Tas mal, repetido";
+    }else if ($c->insertarDatos($datos)) {
         header("location:../index.php");
     }
     
