@@ -34,5 +34,14 @@
             $sql = "DELETE from t_pais where id_pais='$id'";
             return $result=mysqli_query($conexion,$sql);
         }
+        public function editarTarea($datos){
+            $c = new Conexion();
+            $conexion = $c->conectar();
+            $sql = "UPDATE t_pais set id_continente = '$datos[1]',
+                                      nombre_pais = '$datos[2]',
+                                      imagen = '$datos[3]' 
+                                      where id_pais='$datos[0]' ";
+            return $result=mysqli_query($conexion,$sql);
+        }
     }
 ?>
