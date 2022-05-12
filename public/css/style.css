@@ -1,0 +1,17 @@
+.body-mapa{
+    background: rgb(21,170,245);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.estiloMapa path{
+    fill: #FEFBE7;
+    stroke: rgb(19,18,18);
+    stroke-width: 4px;
+}
+.estiloMapa path:hover{
+    fill: #6A67CE;
+}
+.estiloMapa{
+    flex-direction: center;
+    display: flex;
+}

@@ -28,6 +28,9 @@
                                 <a class="nav-link active" aria-current="page" href="./todos_paises.php">All the
                                     countries</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./mapa.php">Continents Map</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

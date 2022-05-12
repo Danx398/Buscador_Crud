@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="<?=DEP_FONTAWESOME6?>css/all.min.css">
 <link rel="stylesheet" href="<?=DEP_SELECT2?>select2.min.css">
 <link rel="stylesheet" href="<?= DEP_DATATABLE?>css/1dataTablesB5.css">
+<link rel="stylesheet" href="<?= DEP_CSS_USO ?>style.css">
 
 <script src="<?=DEP_JS?>jquery-3.6.0.min.js"></script>
 <script src="<?=DEP_JS?>bootstrap5.js"></script>
