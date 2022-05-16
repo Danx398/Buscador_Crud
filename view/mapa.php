@@ -28,6 +28,9 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Continents Map</a>
                             </li>
+							<li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./map_api.php">Continents API</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -41,7 +44,7 @@
 	 width="1200px" height="1200px" viewBox="-50 300 1200 1200" xml:space="preserve">
 <g>
 	<g>
-        <a type="button" xlink:title="Este es el continente Asiatico" onclick="verImagen(3)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a type="button" xlink:title="This is the Asiatic Continent" onclick="verImagen(3)" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <g>
 			<path fill="#E52713" d="M1145.97,437.996c-5.124-1.505-3.313-1.505-5.124-2.704c-1.801-1.209-1.801,3.906-2.702,4.214
 				c-0.91,0.303-2.697-0.602-2.697-4.214c0-3.607-1.82-1.209-3.019-2.104c-1.19-0.896-3.304-3-6.01-3.612
@@ -254,7 +257,7 @@
 		</g>
             </a>
             <g>
-        <a xlink:title="Este es el continente Americano" onclick="verImagen(1)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a xlink:title="This is the American Continent" onclick="verImagen(1)" data-bs-toggle="modal" data-bs-target="#exampleModal">
 			<g>
             <path fill="#E52713" d="M323.606,653.817c0,0,4.007,4.007,3.617,8.018c-0.421,4.016,2.391,6.424-0.421,8.832
             c-2.8,2.408-7.214,6.41-8.011,9.224c-0.809,2.812-2.812,7.614-0.405,8.432c2.403,0.79-4.811,3.195-2.408,7.211
@@ -690,7 +693,7 @@
 				c-5.418,4.216-10.402,7.883-11.519,8.452c0,0-4.801-0.891-5.923-2.413"/>
 		</g>
         </a>
-        <a xlink:title="Este es el continente Africano" onclick="verImagen(5)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a xlink:title="This is the African Continent" onclick="verImagen(5)" data-bs-toggle="modal" data-bs-target="#exampleModal">
 		<g>
 			<path fill="#75AE2C" d="M721.074,644.995c-1.204-0.802-2.798-0.802-5.615,1.197c-2.798,2.006-7.614,1.206-10.021,0.802
 				c-2.398-0.39-4.416,1.204-8.023-1.594c-3.607-2.812-0.404-5.622-4.007-7.623c-3.607-1.994-4.806-3.207-6.424-6.419
@@ -722,7 +725,7 @@
 				c0,1.806,0,7.226,0,7.226s-0.583,7.616-3.005,8.415C703.637,760.115,698.831,764.924,698.831,757.7z"/>
 		</g>
         </a>
-        <a xlink:title="Este es el continente Oceania" onclick="verImagen(4)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a xlink:title="This is the Oceania Continent" onclick="verImagen(4)" data-bs-toggle="modal" data-bs-target="#exampleModal">
 		<g>
         <path fill="#6A321A" d="M400.161,674.474"/>
         <path fill="#008158" d="M912.805,763.311c0,0,1.993-2.391,0.395-4.401c-1.608-2.008-0.804-3.217,0.4-6.429

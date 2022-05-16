@@ -29,6 +29,9 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="./mapa.php">Continents Map</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./map_api.php">Continents API</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

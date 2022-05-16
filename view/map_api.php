@@ -2,15 +2,36 @@
     include "../header.php";
     include "../app/config.php";
     include "../app/dependencias.php";
-    require_once "../app/conexion.php";
-    require_once "../app/metodos.php";
-    $obj = new metodos();
-    $datos = $obj->mostrarDatosGenerales();
 ?>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-8">
-            <h2 class="text-center">Countries</h2>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            /* position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%; */
+            width: 100%;
+            height:500px;
+            
+        }
+    </style>
+</head>
+
+<body>
+<h2 class="text-center">Countries</h2>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="../index.php">World</a>
@@ -38,39 +59,23 @@
                     </div>
                 </div>
             </nav>
-        </div>
-        <div class="row mt-4">
-        <div class="col">
-            <table class="table" id="TablaCompleta">
-                <thead class="text-center">
-                    <th>Continent</th>
-                    <th>Country</th>
-                    <th>Flags</th>
-                    <th>Actions</th>
-                </thead>
-                <tbody class="text-center">
-                    <?php
-                       foreach($datos as $key):
-                    ?>
-                    <tr>
-                        <td><?= $key['nombre_continente'] ?></td>
-                        <td><?= $key['nombre_pais'] ?></td>
-                        <td><img src="<?= $key['imagen'] ?>" alt="" width="100px"></td>
-                        <td>
-                            <a href="../procesos/eliminar.php?id=<?=$key['idPais'] ?>" class="fs-3 text-danger"><i class="fa-solid fa-trash-can-xmark"></i></a>
-                            <a href="../view/editar_pais.php?id=<?= $key['idPais'] ?>" class="fs-3 ms-5 text-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-                        </td>
-                    </tr>
-                    <?php
-                        endforeach;
-                    ?>
-                </tbody>
-            </table>
-        </div>
+            </div>
         </div>
     </div>
-</div>
+    <hr>
+    <div id="map"></div>
+    <script>
+        mapboxgl.accessToken =
+            'pk.eyJ1IjoiZGFueDM5OCIsImEiOiJjbDM2cHBtZXgwbm5lM2pydDJ5a2c4M3F1In0.3nONUNybtBDXIrgW6cuJag';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [0, 20],
+            zoom: 1.1,
+            projection: 'naturalEarth' // starting projection
+        });
+    </script>
 
-<?php
-    include "../footer.php";
-?>
+</body>
+
+</html>
