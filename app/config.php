@@ -1,6 +1,6 @@
 <?php 
 
-    define('SERVIDOR','http://localhost/suit/listaBuscador/');
+    define('SERVIDOR','http://localhost/Buscador_Crud/');
     define('DEP_CSS',SERVIDOR."packages/css/");
     define('DEP_JS',SERVIDOR."packages/js/");
     define('DEP_FONTAWESOME6',SERVIDOR."packages/fontawesome_pro6/");

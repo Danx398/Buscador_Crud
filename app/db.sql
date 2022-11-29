@@ -1,8 +1,11 @@
+Create DATABASE buscador;
+
 CREATE TABLE `buscador`.`t_continente` (
   `id_continente` INT NOT NULL AUTO_INCREMENT,
   `continente` VARCHAR(245) NOT NULL,
   `Descripcion` TEXT NOT NULL,
   PRIMARY KEY (`id_continente`));
+  
   CREATE TABLE `buscador`.`t_pais` (
   `id_pais` INT NOT NULL AUTO_INCREMENT,
   `id_continente` INT NOT NULL,
